@@ -32,6 +32,7 @@ $(document).ready(function() {
             var mapSrc = 'https://maps.googleapis.com/maps/api/staticmap?center=' + Address + '&size=320x240&zoom=15&key=AIzaSyBr4KKhAkxT3KGIH7sqxBxPlcJimrJX-ZA';
 
             var market = "<div> <h2>" + marketName + "</h2> <img src='" + mapSrc + "'> <p><b> Location: </b> <a href='" + GoogleLink + "' target='_blank' >" + Address + "</a></p> <p> <b> Products: </b>" + Products + "</p> <p> <b> Hours: </b>" + Schedule + "</p> </div>";
+              $('#content').append(market);
         });
     }
 });
