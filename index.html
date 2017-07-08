@@ -32,30 +32,45 @@
 <div class="container">
         
             <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a data-toggle="tab" href="#zip_code">Search Near</a></li>
-                <li role="presentation" class=""><a data-toggle="tab" href="#schedule">Schedule</a></li>
-                <li role="presentation" class=""><a data-toggle="tab" href="#providers">For Market Owners!</a></li>
+                <li role="presentation" class="active"><a class="tab_" data-toggle="tab" href="#zip_code">Search Near</a></li>
+                <li role="presentation" class=""><a class="tab_" data-toggle="tab" href="#providers">For Market Owners!</a></li>
             </ul>
         
     
 
     <div class="tab-content">
                 <div id="zip_code" class="tab-pane fade in active">
-                    <form class="form-inline">
+                    <form id="first_form" class="form-inline">
                         <div class="form-group">
-                            <label for="exampleInputName2">Zip Code</label>
+                            <label id="zip_code_label" for="exampleInputName2">Zip Code</label>
                             <input type="text" id="zip" class="form-control" placeholder="Ex: 22210" value="">
                         </div>
-                        <button type="submit" id="searchButton" class="btn btn-default">Search</button>
-                    </form>         
+                        <button type="submit" id="searchButton" class="btn btn-danger">Search</button>
+                    </form>
+
+                        
+                          <div class="panel panel-danger">
+                            <div class="panel-heading">Farmers Markets</div>           
+                              <table class="table">
+                                <thead>
+                                <tr>
+                                <th>Name & Location</th>
+                                <th>Products</th>
+                                <th>Schedule</th>
+                                <th>Special offers & Seasonal items</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                              </table>
+                          </div>
+                        
                 </div>
 
-                <div id="schedule" class="tab-pane fade">
-                </div>
 
                 <div id="providers" class="tab-pane fade">
-                    <div class="panel panel">
-                        <div class="panel-heading">Let everyone know what's in season or of any special offers!</div>
+                    <div id="second_form" class="panel panel-danger">
+                        <div class="panel-heading">Let everyone know what's in season and/or of any special offers!</div>
 
                             <form id="myForm">
                               <div class="form-group">
@@ -67,10 +82,10 @@
                                 <input type="text" class="form-control" id="dates">
                               </div>
                               <div class="form-group">
-                                <label for="exampleInputPassword1">Special Offers</label>
+                                <label for="exampleInputPassword1">Description</label>
                                 <input type="text" class="form-control" id="specials">
                               </div>
-                              <button id="add_user" type="submit" class="btn btn">Submit</button>
+                              <button id="add_user" type="submit" class="btn btn-danger">Submit</button>
                             </form>
 
                     </div>
@@ -81,22 +96,7 @@
 
 
 
-    <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-heading">Farmers Markets</div>           
-                <table class="table">
-                    <thead>
-                    <tr>
-                    <th>Market Name & Location</th>
-                    <th>Products</th>
-                    <th>Schedule</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-        </div>
-    </div>
+
 
 
 
