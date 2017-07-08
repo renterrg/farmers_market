@@ -1,0 +1,55 @@
+body {
+	background-color: white;
+}
+
+.jumbotron {
+	background-image: url(produce.jpg);
+	color: white;
+	text-shadow: black 2px 2px 2px;
+	text-align: center;
+	height: 25em;
+}
+
+#title {
+	width: 60%;
+	margin-left: 5.5em;
+	padding-top: 0.5em;
+	font-size: 90px;
+	font-family: 'Arima Madurai', cursive;	
+}
+
+.middle {
+	width: 40%;	
+}
+
+.middle_content {
+	font-size: 20px;
+	line-height: 1.5;
+	padding: 75px 10px 35px 30px;
+}
+
+.left, th {
+	text-align: center;
+}
+
+#address_link {
+	font-size: 20px;
+}
+
+.map {
+	width: 100%;
+}
+
+.left_content {
+	padding: 30px;
+}
+
+.right {
+	width: 30%;
+}
+
+.right_content {
+	font-size: 18px;
+	line-height: 1.5;
+	padding: 75px 10px 0px 70px;
+}
