@@ -64,12 +64,12 @@ body {
 }
 
 .tab_ {
-	color: #B81F2B;
+	color: green;
 	font-size: 18px;
 }
 
 a:hover {
-    color: #B81F2B;
+    color: green;
 }
 
 .container {
@@ -103,6 +103,6 @@ a:hover {
 	height: 6em;
 }
 
-#zip_code_label {
+#zip_code_label, #name_label {
 	font-size: 18px;
 }
