@@ -1,4 +1,18 @@
 $(document).ready(function() {
+
+  var nameInput = $("#name-input");
+  var emailInput = $("#email-input");
+  var emailLogin = $("#email-login");
+  var passwordInput = $("#password-input");
+  var passwordLogin = $("#password-login");
+  var loginData = [];
+  var validatedPassword;
+  var validatedEmail;
+
+
+
+    
+    $('#second_form').hide();
   
     $(document).on('click', '#searchButton', function(e) {
     $('tbody').html('');
@@ -60,7 +74,7 @@ $(document).ready(function() {
               });
         }
 
-          // Initialize Firebase
+        // Initialize Firebase
           var config = {
             apiKey: "AIzaSyAwXjBf6q0NN6K4Ub_uO0H2qBAgeTFiU24",
             authDomain: "farmers-market-80467.firebaseapp.com",
@@ -89,13 +103,15 @@ $(document).ready(function() {
 
             alert("Thank you! Your information has been uploaded!");
 
-            $('#myForm').each(function(){
-            this.reset();
+                $('#myForm').each(function(){
+                this.reset();
+                });
             });
 
+          // Registration & Log In
 
 
-          });
+
 
 });
 

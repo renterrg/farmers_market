@@ -70,6 +70,70 @@
 
 
                 <div id="providers" class="tab-pane fade">
+
+
+                  <button id="login-menu" class="btn btn-default btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">Log In/Register</button>
+
+                  <!-- Modal with LogIn/Register form -->
+
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home_tab" role="tab" aria-controls="home" aria-expanded="true">Log In</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="registration-menu" data-toggle="tab" href="#profile_tab" role="tab" aria-controls="profile">Register</a>
+                          </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade active" id="home_tab" role="tabpanel" aria-labelledby="home-tab">
+                            <form style="padding: 20px">
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control form-control-lg" id="email-login" aria-describedby="emailHelp" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control form-control-lg" id="password-login" placeholder="Password">
+                              </div>
+                              <button id="teamMates-login" type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                          </div>
+
+                          <div class="tab-pane fade" id="profile_tab" role="tabpanel" aria-labelledby="profile-tab">
+                            <form id="register-form" style="padding: 20px">
+                              <div class="form-group">
+                                <label for="name-input">Full Name</label>
+                                  <input class="form-control form-control-lg" type="text" id="name-input" placeholder="Enter name">
+                              </div>
+                              <div class="form-group">
+                                <label for="email-input">Email address</label>
+                                <input type="email" class="form-control form-control-lg" id="email-input" aria-describedby="emailHelp" placeholder="Enter email">
+                              </div>
+                              <div class="form-group">
+                                <label for="password-input">Password</label>
+                                <input type="password" class="form-control form-control-lg" id="password-input" placeholder="Password">
+                              </div>
+                              
+                              <br><br>
+
+                              <button id="teamMember-registration" type="submit" class="btn btn-default">Register</button>
+                              
+                              
+                              </form>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
                     <div id="second_form" class="panel panel-success">
                         <div class="panel-heading">Let everyone know what's in season and any special offers!</div>
 
